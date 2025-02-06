@@ -1,0 +1,14 @@
+C:\Users\Adis\Desktop\c#_SmartHouse\bin\Debug\net6.0\c#_SmartHouse.exe
+C:\Users\Adis\Desktop\c#_SmartHouse\bin\Debug\net6.0\c#_SmartHouse.deps.json
+C:\Users\Adis\Desktop\c#_SmartHouse\bin\Debug\net6.0\c#_SmartHouse.runtimeconfig.json
+C:\Users\Adis\Desktop\c#_SmartHouse\bin\Debug\net6.0\c#_SmartHouse.dll
+C:\Users\Adis\Desktop\c#_SmartHouse\bin\Debug\net6.0\c#_SmartHouse.pdb
+C:\Users\Adis\Desktop\c#_SmartHouse\obj\Debug\net6.0\c#_SmartHouse.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Adis\Desktop\c#_SmartHouse\obj\Debug\net6.0\c#_SmartHouse.AssemblyInfoInputs.cache
+C:\Users\Adis\Desktop\c#_SmartHouse\obj\Debug\net6.0\c#_SmartHouse.AssemblyInfo.cs
+C:\Users\Adis\Desktop\c#_SmartHouse\obj\Debug\net6.0\c#_SmartHouse.csproj.CoreCompileInputs.cache
+C:\Users\Adis\Desktop\c#_SmartHouse\obj\Debug\net6.0\c#_SmartHouse.dll
+C:\Users\Adis\Desktop\c#_SmartHouse\obj\Debug\net6.0\refint\c#_SmartHouse.dll
+C:\Users\Adis\Desktop\c#_SmartHouse\obj\Debug\net6.0\c#_SmartHouse.pdb
+C:\Users\Adis\Desktop\c#_SmartHouse\obj\Debug\net6.0\c#_SmartHouse.genruntimeconfig.cache
+C:\Users\Adis\Desktop\c#_SmartHouse\obj\Debug\net6.0\ref\c#_SmartHouse.dll
