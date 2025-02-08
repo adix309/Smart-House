@@ -1,5 +1,5 @@
 
-abstract class Smart{
+  abstract class Smart{
     protected string name="";
     protected int total_energy_usage;
     public int Total_energy_usage{
@@ -24,32 +24,44 @@ abstract class Smart{
     public void add(Device n){
         allDevice.Add(n);
     }
-    protected Security sensors;
+    
+    protected Security sensors = new Security(false, 0, "unknown", false);
+
     public Security Sensors{
         set{sensors=value;}
     }
-    protected Light lights ;
+    protected Light lights = new Light(false, 0, "unknown", "red",0);
     public Light Lights {
         set{lights =value;}
     }
-    protected Solarpanel solar;
+    protected Solarpanel solar=new Solarpanel(false, 0, "unknown", 0,0);
     public Solarpanel Solar{
         set{solar=value;}
     }
 
 
-    public Smart(int total_energy_usage,string owner,string address,Security sensors,Light lights ,Solarpanel solar){
-        this.solar=solar;
-        this.sensors=sensors;
-        this.lights =lights ;
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    public Smart(int total_energy_usage,string owner,string address){
         this.total_energy_usage=total_energy_usage;
         this.owner=owner;
         this.address=address;
-        allDevice.Add(sensors);
-        allDevice.Add(lights );
-        allDevice.Add(solar);
+        
+        
 
     }
+
 
     public virtual void Ispis(){
         Console.WriteLine($"   Izvjestaj od Device sistema :");
@@ -96,13 +108,18 @@ class Garage:Smart{
     }
 }
 
+
+
+
+
     public Garage(int total_energy_usage,string owner,string address,bool door_status,
-    int vehicle_capacity,int current_vehicals,Security sensors,Light lights ,Solarpanel solar):base(total_energy_usage,owner,address,sensors,lights ,solar){
+    int vehicle_capacity,int current_vehicals):base(total_energy_usage,owner,address){
         this.name="Garaža";
         this.door_status=door_status;
         this.vehicle_capacity=vehicle_capacity;
         this.current_vehicals=current_vehicals;
     }
+
      public override void Ispis(){
         Console.WriteLine($"Naziv  Objekta je  {name},a njen vlasnik je {owner},nalazi se na adresi {address},i ovaj objekat trosi {total_energy_usage} W/h ");
         Console.WriteLine($"Vrata su trenutno otvorena: {door_status} ,u garazu moze da stane {vehicle_capacity} vozila,i u njoj je trrenutno { current_vehicals} vozila");
@@ -142,13 +159,16 @@ public int CurrentTemperature
 
 
 
+
     public House(int total_energy_usage,string owner,string address,int number_of_rooms,
-    int current_temperature,Security sensors,Light lights ,Solarpanel solar):base(total_energy_usage,owner,address,sensors,lights ,solar){
+    int current_temperature):base(total_energy_usage,owner,address){
         this.name="Kuca";
         this.number_of_rooms=number_of_rooms;
         this.current_temperature=current_temperature;
 
     }
+
+
     public override void Ispis(){
      Console.WriteLine($"Naziv  Objekta je  {name},a njen vlasnik je {owner},nalazi se na adresi {address},i ovaj objekat trosi {total_energy_usage} W/h ");
      Console.WriteLine($"u Kuci ima {number_of_rooms} sobe, i u njima je temperatura  {current_temperature} ");
@@ -180,9 +200,8 @@ class Building:Smart{
 
 
 
-
     public Building(int total_energy_usage,string owner,string address,int number_of_floors,
-    int total_apartment,Security sensors,Light lights ,Solarpanel solar):base(total_energy_usage,owner,address,sensors,lights ,solar){
+    int total_apartment):base(total_energy_usage,owner,address){
         this.name="Zgrada ";
         this.number_of_floors=number_of_floors;
         this.total_apartment=total_apartment;

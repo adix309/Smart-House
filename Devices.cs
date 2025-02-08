@@ -1,5 +1,8 @@
 
- abstract class Device{
+//stavi ogranicenja na jacinu svjetlosti i tako jos ako negdje ima 
+
+
+ public abstract class Device{
     protected  string name="";  
     protected bool status;
     public bool Status{

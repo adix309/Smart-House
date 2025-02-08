@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Adis\\Desktop\\c#_SmartHouse\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{499E221C-6492-A827-8443-081107CF2698}|c#_SmartHouse.csproj|c:\\users\\adis\\desktop\\c#_smarthouse\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{499E221C-6492-A827-8443-081107CF2698}|c#_SmartHouse.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{499E221C-6492-A827-8443-081107CF2698}|c#_SmartHouse.csproj|c:\\users\\adis\\desktop\\c#_smarthouse\\devices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{499E221C-6492-A827-8443-081107CF2698}|c#_SmartHouse.csproj|solutionrelative:devices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{499E221C-6492-A827-8443-081107CF2698}|c#_SmartHouse.csproj|c:\\users\\adis\\desktop\\c#_smarthouse\\smart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{499E221C-6492-A827-8443-081107CF2698}|c#_SmartHouse.csproj|solutionrelative:smart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Adis\\Desktop\\c#_SmartHouse\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Adis\\Desktop\\c#_SmartHouse\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T13:41:35.502Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "a9753984-b154-4fe2-b269-5540f23813ad",
+        "Display": 0,
+        "X": 1103,
+        "Y": 50,
+        "Width": 1578,
+        "Height": 792,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Smart.cs",
+              "DocumentMoniker": "C:\\Users\\Adis\\Desktop\\c#_SmartHouse\\Smart.cs",
+              "RelativeDocumentMoniker": "Smart.cs",
+              "ToolTip": "C:\\Users\\Adis\\Desktop\\c#_SmartHouse\\Smart.cs",
+              "RelativeToolTip": "Smart.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA9wAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T15:05:14.26Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "998ecda1-3c63-46fe-b9f9-389fcc0ca23f",
+        "Display": 0,
+        "X": 1068,
+        "Y": 265,
+        "Width": 930,
+        "Height": 673,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Devices.cs",
+              "DocumentMoniker": "C:\\Users\\Adis\\Desktop\\c#_SmartHouse\\Devices.cs",
+              "RelativeDocumentMoniker": "Devices.cs",
+              "ToolTip": "C:\\Users\\Adis\\Desktop\\c#_SmartHouse\\Devices.cs",
+              "RelativeToolTip": "Devices.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAmwDYAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T15:06:33.896Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
