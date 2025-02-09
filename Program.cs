@@ -3,17 +3,16 @@ using System.Runtime.Intrinsics.Arm;
 using System.Security.Cryptography.X509Certificates;
 
 
-class Program{
- 
-    static void Main(){
-         
-      
-        //MakeDevice(); 
+class Program
+{
+
+    static void Main()
+    {
+
         SmartFactory.MakeSmart();
 
-
-        Console.WriteLine("-------------------------------------------------------");
-        SmartFactory.Ispis();
+        Console.WriteLine(" This is print all smart objects:");
+        SmartFactory.IspisSvega();
 
 
 

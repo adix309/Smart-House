@@ -1,132 +1,113 @@
 
-//stavi ogranicenja na jacinu svjetlosti i tako jos ako negdje ima 
-
-
- public abstract class Device{
-    protected  string name="";  
+public abstract class Device
+{
+    protected string name = "";
     protected bool status;
-    public bool Status{
-    get{return status;}
-    set{status=value;}
-    }
     protected double power_consumption;
-    public  double Power_consumption{
-    get{return power_consumption;}
-    set{power_consumption=value;}
-    }
     protected string location;
-    public  string Location{
-    get{return location;}
-    set{location=value;}
+
+    public Device(bool status, double power_consumption, string location)
+    {
+        this.status = status;
+        this.power_consumption = power_consumption;
+        this.location = location;
     }
-    public Device(bool status,double power_consumption,string location){
-            this.status=status;        
-            this.power_consumption=power_consumption;
-            this.location=location;                             
-          }
-    public virtual  void Ispis(){
-        Console.Write($"Ime uređaja je  {name},on trosi {power_consumption} W/h i njegova lokacija je {location},");      
-       if(status){
-        Console.WriteLine("I trenutno je ukljucen");
-       }else{
-        Console.WriteLine("I trenutno je iskljucen");
-       }
-    }
-    
+    public virtual void PrintSingleDevice()
+    {
 
 
-}
-
-class Light:Device{
-
-    private string color;
-    public string Color{
-        get{return color;}
-        set{color=value;}
-    }
-    private int brightness;
-    public int Brightness{
-        get{return brightness;}
-        set{
-            if(value>0 && value<=100){
-                brightness=value;
-            }
+        Console.Write($"The device name is {name}, it consumes {power_consumption} W/h, and its location is {location}, ");
+        if (status)
+        {
+            Console.WriteLine("and it is currently turned on.");
         }
+        else
+        {
+            Console.WriteLine("and it is currently turned off.");
+        }
+
+
+
+
+
+
+
     }
+}
 
+class Light : Device
+{
+    private string color;
 
+    private int brightness;
     public Light(bool status, double power_consumption, string location, string color, int brightness)
-    : base(status, power_consumption, location) {
-    this.name = "Svjetlo ";
-    this.color = color;
-    this.brightness = brightness;
+    : base(status, power_consumption, location)
+    {
+        this.name = "Light ";
+        this.color = color;
+        if (brightness > 100)
+        {
+            brightness = 100;
+        }
+        else if (brightness < 0)
+        {
+            brightness = 0;
+        }
+
+        this.brightness = brightness;
     }
-    
-    
-    public override void Ispis(){
-            base.Ispis();
-            Console.WriteLine($"i njegova boja je {color} a jacina svjetla je {brightness} ");
-    
-    
-    }    
+
+
+    public override void PrintSingleDevice()
+    {
+        base.PrintSingleDevice();
+        Console.WriteLine($"and color is {color} and  light intensity is {brightness} ");
+
+
+    }
 }
-class Solarpanel:Device{
+class Solarpanel : Device
+{
+    private int effciency;
+    private int angle;
 
-    private  int effciency;
-    public int Effciency{
-        get{return effciency;}      
-        set{
-               if(value>0 && value<100){
-                    effciency=value;
-                }  
-            }
+    public Solarpanel(bool status, double power_consumption, string location, int effciency, int angle)
+                : base(status, power_consumption, location)
+    {
+        this.name = "Solar panel";
+        this.effciency = effciency;
+        this.angle = angle;
     }
-    private  int angle;
-    public int Angle{
-        get{return angle;}
-        set{
-            if(value>0 && value < 360){
-                angle=value;}
-            }
+    public override void PrintSingleDevice()
+    {
+        base.PrintSingleDevice();
+        Console.WriteLine($"The angle of the device is {angle} degrees and its efficiency is {effciency} %");
     }
-
-    public Solarpanel(bool status,double power_consumption,string location,int effciency,int angle)
-                : base(status, power_consumption, location) {
-            this.name = "Solarni panel";
-            this.effciency=effciency;
-            this.angle=angle;
-    }
-     public override void Ispis(){
-         base.Ispis();
-         Console.WriteLine($"Ugao uređaja je  {angle} a njegova efikasnost je {effciency} %");
-        
-    }    
-
 }
-
-class Security:Device{
-
+class Security : Device
+{
     private bool motion_detected;
-    public bool Motion_detected{
-        get{return motion_detected;}
-        set{motion_detected=value;}
-    }
-    public Security(bool status,double power_consumption,string location,bool motion_detected)
-            : base(status, power_consumption, location) {
-        this.name = "Detektor pokreta";
-        this.motion_detected=motion_detected;    
+    public Security(bool status, double power_consumption, string location, bool motion_detected)
+           : base(status, power_consumption, location)
+    {
+        this.name = "Motion detector";
+        this.motion_detected = motion_detected;
     }
 
-    public override void Ispis(){
-      base.Ispis();
-      if(motion_detected){
-        Console.WriteLine($"Uređaja je primjetio kretanje.");
-      }else{
-        Console.WriteLine($"Uređaja je nije primjetio kretanje.");
-      }
-     
-     
-    }    
+    public override void PrintSingleDevice()
+    {
+        base.PrintSingleDevice();
+        if (motion_detected)
+        {
+            Console.WriteLine($"The device detected movement.");
+        }
+        else
+        {
+            Console.WriteLine($"The device did not detected movement.");
+        }
+
+
+    }
 
 }
 

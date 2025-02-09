@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("c#_SmartHouse")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e06a2ea7f4b32589fead6898554be8f12c9aee0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9454279d386358780aa8b6cfbd11ee82e725113")]
 [assembly: System.Reflection.AssemblyProductAttribute("c#_SmartHouse")]
 [assembly: System.Reflection.AssemblyTitleAttribute("c#_SmartHouse")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
